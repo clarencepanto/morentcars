@@ -1,0 +1,76 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.header {
+  padding: 2rem;
+  min-width: 23.438rem;
+  min-height: 13.875rem;
+
+  &__sidebarusericons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+
+    &__sidebarimg {
+      width: 1.375rem;
+      height: 1.375rem;
+      cursor: pointer;
+    }
+
+    &__userimg {
+      width: 1.75rem;
+      height: 1.75rem;
+      cursor: pointer;
+    }
+  }
+
+  &__morentlogo {
+    width: 6.5rem;
+    height: 1.2rem;
+  }
+
+  &__searchiconfilter {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+
+    &__container {
+      display: flex;
+      align-items: center;
+      border: 1px solid rgba(0, 0, 0, 0.09);
+      width: 23.438rem;
+      height: 3rem;
+      border-radius: 10px;
+
+      &--filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.09);
+        width: 3rem;
+        height: 3rem;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+
+    &__searchiconimg {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-left: 1rem;
+    }
+
+    &__searchinput {
+      width: 16.438rem;
+      height: 2.8rem;
+      padding-left: 1rem;
+      border: none;
+      outline: none;
+    }
+
+    &__filtericon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

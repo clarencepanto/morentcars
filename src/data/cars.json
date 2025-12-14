@@ -1,0 +1,103 @@
+[
+  {
+    "id": 1,
+    "name": "Koenigsegg",
+    "type": "Sport",
+    "isLiked": true,
+    "url": "blah",
+    "fuelcapacity": 90,
+    "transmissiontype": "Manual",
+    "seatingcount": 2,
+    "price": 90
+  },
+  {
+    "id": 2,
+    "name": "NissanGT - R",
+    "type": "Sport",
+    "isLiked": false,
+    "url": "blah",
+    "fuelcapacity": 80,
+    "transmissiontype": "Manual",
+    "seatingcount": 2,
+    "price": 80
+  },
+  {
+    "id": 3,
+    "name": "Rolls - Royce",
+    "type": "Sedan",
+    "isLiked": true,
+    "url": "blah",
+    "fuelcapacity": 70,
+    "transmissiontype": "Manual",
+    "seatingcount": 4,
+    "price": 96
+  },
+  {
+    "id": 4,
+    "name": "All New Rush",
+    "type": "SUV",
+    "isLiked": false,
+    "url": "blah",
+    "fuelcapacity": 70,
+    "transmissiontype": "Manual",
+    "seatingcount": 6,
+    "price": 72
+  },
+  {
+    "id": 5,
+    "name": "CR - V",
+    "type": "SUV",
+    "isLiked": true,
+    "url": "blah",
+    "fuelcapacity": 80,
+    "transmissiontype": "Manual",
+    "seatingcount": 6,
+    "price": 80
+  },
+  {
+    "id": 6,
+    "name": "All New Terios",
+    "type": "SUV",
+    "isLiked": false,
+    "url": "blah",
+    "fuelcapacity": 90,
+    "transmissiontype": "Manual",
+    "seatingcount": 6,
+    "price": 74
+  },
+
+  {
+    "id": 7,
+    "name": "MG ZX Exclusice",
+    "type": "Hatchback",
+    "isLiked": true,
+    "url": "blah",
+    "fuelcapacity": 70,
+    "transmissiontype": "Manual",
+    "seatingcount": 4,
+    "price": 76
+  },
+
+  {
+    "id": 8,
+    "name": "New MG ZS",
+    "type": "SUV",
+    "isLiked": false,
+    "url": "blah",
+    "fuelcapacity": 80,
+    "transmissiontype": "Manual",
+    "seatingcount": 6,
+    "price": 80
+  },
+  {
+    "id": 9,
+    "name": "MG ZX Excite",
+    "type": "Hatchback",
+    "isLiked": true,
+    "url": "blah",
+    "fuelcapacity": 74,
+    "transmissiontype": "Manual",
+    "seatingcount": 4,
+    "price": 74
+  }
+]

@@ -1,0 +1,66 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.btn {
+  background-color: $primary-color-500;
+  text-align: center;
+  color: $primary-color-0;
+  width: 6.25rem;
+  height: 2.25rem;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: $font-semibold;
+  font-family: $font-jakarta;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @include tablet {
+    width: 7.25rem;
+    height: 2.75rem;
+    font-size: 1rem;
+  }
+
+  @include desktop {
+    width: 7.25rem;
+    height: 2.75rem;
+    font-size: 1rem;
+  }
+
+  @include wide {
+    width: 7.25rem;
+    height: 2.75rem;
+    font-size: 1rem;
+  }
+
+  &--sm {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 0.625rem;
+  }
+
+  &--lg {
+    width: 7.5rem;
+    height: 2.25rem;
+    font-size: 0.75rem;
+
+    @include tablet {
+      width: 9.75rem;
+      height: 2.75rem;
+      font-size: 1rem;
+    }
+    @include desktop {
+      width: 9.75rem;
+      height: 2.75rem;
+      font-size: 1rem;
+    }
+    @include wide {
+      width: 9.75rem;
+      height: 2.75rem;
+      font-size: 1rem;
+    }
+  }
+
+  &:active {
+    background-color: $primary-dark-color-700;
+  }
+}

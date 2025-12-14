@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "car_id": 1,
+    "carname": "Koenigsegg",
+    "details": "Koenigsegg builds ultra-light, extreme-performance hypercars with cutting-edge aerodynamics, innovative engines, and futuristic technology designed for unmatched speed and precision.",
+    "fuelcapacity": 90,
+    "transmissiontype": "Manual",
+    "seatingcount": 2,
+    "price": 90
+  },
+  {
+    "id": 2,
+    "car_id": 2,
+    "carname": "Nissan GT - R",
+    "details": "NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the race track",
+    "fuelcapacity": 80,
+    "transmissiontype": "Manual",
+    "seatingcount": 2,
+    "price": 80
+  },
+  {
+    "id": 3,
+    "car_id": 3,
+    "carname": "Rolls - Royce",
+    "details": "Rolls-Royce creates ultra-luxury cars with handcrafted interiors, whisper-quiet rides, elegant design, and unmatched comfort made for effortless, royal-level travel.",
+    "fuelcapacity": 70,
+    "transmissiontype": "Manual",
+    "seatingcount": 4,
+    "price": 96
+  },
+
+  {
+    "id": 4,
+    "car_id": 4,
+    "carname": "All New Rush",
+    "details": "The all-new Toyota Rush is a compact SUV offering stylish design, flexible seating, solid ground clearance, and practical reliability for everyday family adventures.",
+    "fuelcapacity": 70,
+    "transmissiontype": "Manual",
+    "seatingcount": 6,
+    "price": 72
+  },
+  {
+    "id": 5,
+    "car_id": 5,
+    "carname": "CR - V",
+    "details": "The Honda CR-V is a spacious, efficient SUV known for smooth comfort, reliable performance, clever storage, and practical everyday versatility.",
+    "fuelcapacity": 80,
+    "transmissiontype": "Manual",
+    "seatingcount": 6,
+    "price": 80
+  },
+  {
+    "id": 6,
+    "car_id": 6,
+    "carname": "All New Terios",
+    "details": "The all-new Terios is a compact SUV with modern styling, fuel efficiency, high ground clearance, and practical space built for daily adventures.",
+    "fuelcapacity": 90,
+    "transmissiontype": "Manual",
+    "seatingcount": 6,
+    "price": 74
+  },
+
+  {
+    "id": 7,
+    "car_id": 7,
+    "carname": "MG ZX Exclusice",
+    "details": "The MG ZS Exclusive offers modern styling, a premium touchscreen interior, smooth driving, smart safety features, and great value for everyday urban travel.",
+    "fuelcapacity": 70,
+    "transmissiontype": "Manual",
+    "seatingcount": 4,
+    "price": 76
+  },
+  {
+    "id": 8,
+    "car_id": 8,
+    "carname": "New MG ZS",
+    "details": "The New MG ZS is a stylish compact SUV with a modern interior, smooth ride, smart tech, and strong value for daily driving.",
+    "fuelcapacity": 80,
+    "transmissiontype": "Manual",
+    "seatingcount": 6,
+    "price": 80
+  },
+  {
+    "id": 9,
+    "car_id": 9,
+    "carname": "MG ZX Excite",
+    "details": "The MG ZS ZX Excite delivers sporty styling, a modern cabin, responsive performance, smart tech features, and great value for everyday driving.",
+    "fuelcapacity": 74,
+    "transmissiontype": "Manual",
+    "seatingcount": 4,
+    "price": 74
+  }
+]

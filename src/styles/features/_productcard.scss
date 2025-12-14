@@ -1,0 +1,225 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.productcard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      font-weight: $font-semibold;
+      font-size: 1rem;
+      padding-bottom: 0.25rem;
+
+      @include tablet {
+        font-size: 1.25rem;
+      }
+      @include desktop {
+        font-size: 1.25rem;
+      }
+    }
+
+    &__subtitle {
+      font-weight: $font-bold;
+      color: $text-light-color-300;
+      font-size: 0.75rem;
+    }
+  }
+
+  &__heart {
+    width: 1rem;
+    height: 1rem;
+
+    @include tablet {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    @include desktop {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1.6rem;
+    position: relative;
+
+    @include tablet {
+      flex-direction: column;
+      padding-top: 2rem;
+    }
+    @include desktop {
+      flex-direction: column;
+      padding-top: 2rem;
+    }
+
+    .carimg {
+      width: 8.875rem;
+      height: 4rem;
+      -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 50%,
+        transparent 100%
+      );
+      mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+
+      @include tablet {
+        width: 15.75rem;
+        height: 7rem;
+        transform: translateY(15px);
+        -webkit-mask-image: linear-gradient(
+          to bottom,
+          black 62%,
+          transparent 100%
+        );
+        mask-image: linear-gradient(to bottom, black 62%, transparent 100%);
+      }
+      @include desktop {
+        width: 15.75rem;
+        height: 7rem;
+        transform: translateY(15px);
+        -webkit-mask-image: linear-gradient(
+          to bottom,
+          black 62%,
+          transparent 100%
+        );
+        mask-image: linear-gradient(to bottom, black 62%, transparent 100%);
+      }
+    }
+
+    &__carstats {
+      display: flex;
+      flex-direction: column;
+      margin-top: -1.2rem;
+      gap: 13px;
+      width: 4.9rem;
+      height: 4.625rem;
+      transform: translateX(25px);
+
+      @include tablet {
+        width: 17rem;
+        flex-direction: row;
+        transform: translate(1px, 70px);
+        gap: 35px;
+      }
+      @include desktop {
+        width: 17rem;
+        flex-direction: row;
+        transform: translate(1px, 70px);
+        gap: 35px;
+      }
+
+      &__fuel,
+      &__transmission,
+      &__capacity {
+        display: flex;
+        font-size: 0.9rem;
+        color: $text-light-color-300;
+
+        &__text {
+          font-weight: $font-regular;
+
+          @include tablet {
+            transform: translateY(4px);
+          }
+          @include desktop {
+            transform: translateY(4px);
+          }
+        }
+
+        &__icon {
+          padding-right: 0.25rem;
+          width: 1.2rem;
+          height: 1rem;
+
+          @include tablet {
+            width: 1.7rem;
+            height: 1.5rem;
+          }
+          @include desktop {
+            width: 1.7rem;
+            height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    flex-direction: column;
+
+    @include tablet {
+      padding-top: 3.5rem;
+    }
+    @include desktop {
+      padding-top: 3.5rem;
+    }
+
+    &__text {
+      font-size: 1rem;
+      font-weight: $font-semibold;
+
+      @include tablet {
+        font-size: 1.25rem;
+      }
+      @include desktop {
+        font-size: 1.25rem;
+      }
+
+      &--light {
+        color: $text-light-color-300;
+        font-weight: $font-regular;
+        font-size: 0.75rem;
+
+        @include tablet {
+          font-size: 0.875rem;
+          font-weight: $font-medium;
+        }
+
+        @include desktop {
+          font-size: 0.875rem;
+          font-weight: $font-medium;
+        }
+      }
+    }
+
+    &__original {
+      color: $text-light-color-300;
+      font-size: 0.75rem;
+      font-weight: $font-regular;
+      text-decoration: line-through;
+      padding-top: 0.25rem;
+
+      @include tablet {
+        font-weight: $font-medium;
+      }
+
+      @include desktop {
+        font-weight: $font-medium;
+      }
+    }
+  }
+
+  &__btn__container {
+    font-weight: $font-regular;
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-35px);
+
+    @include tablet {
+      transform: translateY(-45px);
+    }
+    @include desktop {
+      transform: translateY(-45px);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.card {
+  width: 20.438rem;
+  height: 15rem;
+  padding: 1rem;
+
+  @include tablet {
+    width: 19.813rem;
+    height: 24.25rem;
+    padding: 1.3rem;
+  }
+  @include desktop {
+    width: 19.813rem;
+    height: 24.25rem;
+    padding: 1.3rem;
+  }
+  @include wide {
+    width: 19.813rem;
+    height: 24.25rem;
+    padding: 1.3rem;
+  }
+}
+
+.smallcard {
+  width: 20.438rem;
+  height: 7.5rem;
+  border: 1px solid black;
+
+  @include tablet {
+    width: 30.375rem;
+    height: 8.25rem;
+  }
+  @include desktop {
+    width: 30.375rem;
+    height: 8.25rem;
+  }
+  @include wide {
+    width: 30.375rem;
+    height: 8.25rem;
+  }
+}
