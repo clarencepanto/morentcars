@@ -6,27 +6,110 @@
   min-width: 23.438rem;
   min-height: 13.875rem;
 
+  @include tablet {
+    padding: 3rem;
+  }
+
+  &__toprow {
+    padding-bottom: 1.5rem;
+
+    @include desktop {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+
   &__sidebarusericons {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
+
+    @include desktop {
+      justify-content: space-between;
+      order: 3;
+      width: 14rem;
+    }
 
     &__sidebarimg {
       width: 1.375rem;
       height: 1.375rem;
       cursor: pointer;
+
+      @include desktop {
+        display: none;
+      }
+    }
+
+    @include desktop {
+      margin-left: auto;
+    }
+
+    &__hearticon {
+      display: none;
+
+      @include desktop {
+        display: block;
+        width: 2.75rem;
+        height: 2.75rem;
+        border: 1px solid rgba(0, 0, 0, 0.09);
+        border-radius: 50%;
+        padding: 0.5rem;
+        cursor: pointer;
+        transform: translateY(15px);
+      }
+    }
+    &__notificationicon {
+      display: none;
+
+      @include desktop {
+        display: block;
+        width: 2.75rem;
+        height: 2.75rem;
+        border: 1px solid rgba(0, 0, 0, 0.09);
+        border-radius: 50%;
+        padding: 0.5rem;
+        cursor: pointer;
+        transform: translateY(15px);
+      }
+    }
+    &__settingsicon {
+      display: none;
+
+      @include desktop {
+        display: block;
+        width: 2.75rem;
+        height: 2.75rem;
+        border: 1px solid rgba(0, 0, 0, 0.09);
+        border-radius: 50%;
+        padding: 0.5rem;
+        cursor: pointer;
+        transform: translateY(15px);
+      }
     }
 
     &__userimg {
       width: 1.75rem;
       height: 1.75rem;
       cursor: pointer;
+
+      @include desktop {
+        transform: translateY(15px);
+        width: 2.75rem;
+        height: 2.75rem;
+      }
     }
   }
 
   &__morentlogo {
     width: 6.5rem;
     height: 1.2rem;
+
+    @include desktop {
+      order: 1;
+      transform: translateY(14px);
+    }
   }
 
   &__searchiconfilter {
@@ -34,13 +117,25 @@
     justify-content: space-between;
     padding-top: 2rem;
 
+    @include desktop {
+      order: 2;
+    }
+
     &__container {
       display: flex;
       align-items: center;
       border: 1px solid rgba(0, 0, 0, 0.09);
-      width: 23.438rem;
+      flex-grow: 1;
       height: 3rem;
       border-radius: 10px;
+      margin-right: 1rem;
+
+      @include desktop {
+        border-radius: 30px;
+        width: 30.75rem;
+        flex-grow: 0;
+        transform: translateX(30px);
+      }
 
       &--filter {
         display: flex;
@@ -51,6 +146,10 @@
         height: 3rem;
         border-radius: 10px;
         cursor: pointer;
+
+        @include desktop {
+          border: none;
+        }
       }
     }
 
@@ -61,7 +160,6 @@
     }
 
     &__searchinput {
-      width: 16.438rem;
       height: 2.8rem;
       padding-left: 1rem;
       border: none;
@@ -71,6 +169,10 @@
     &__filtericon {
       width: 1.5rem;
       height: 1.5rem;
+
+      @include desktop {
+        transform: translateX(-40px);
+      }
     }
   }
 }
