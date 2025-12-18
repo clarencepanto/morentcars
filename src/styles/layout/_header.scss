@@ -57,7 +57,7 @@
         border-radius: 50%;
         padding: 0.5rem;
         cursor: pointer;
-        transform: translateY(15px);
+        transform: translateY(30px);
       }
     }
     &__notificationicon {
@@ -71,7 +71,7 @@
         border-radius: 50%;
         padding: 0.5rem;
         cursor: pointer;
-        transform: translateY(15px);
+        transform: translateY(30px);
       }
     }
     &__settingsicon {
@@ -85,7 +85,7 @@
         border-radius: 50%;
         padding: 0.5rem;
         cursor: pointer;
-        transform: translateY(15px);
+        transform: translateY(30px);
       }
     }
 
@@ -95,7 +95,7 @@
       cursor: pointer;
 
       @include desktop {
-        transform: translateY(15px);
+        transform: translateY(30px);
         width: 2.75rem;
         height: 2.75rem;
       }
