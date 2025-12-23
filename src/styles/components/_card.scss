@@ -27,6 +27,8 @@
   width: 20.438rem;
   height: 7.5rem;
   border: 1px solid black;
+  padding: 0.7rem;
+  border-radius: 15px;
 
   @include tablet {
     width: 30.375rem;

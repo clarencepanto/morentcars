@@ -1,10 +1,10 @@
 import "./styles/main.scss";
-import Header from "./components/layout/header";
+import InfoCard from "./components/features/InfoCard";
 
 export default function App() {
   return (
     <div>
-      <Header />
+      <InfoCard />
     </div>
   );
 }

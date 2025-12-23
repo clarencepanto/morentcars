@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.infocard {
+  .smallcard {
+    &__label {
+      padding-left: 0.5rem;
+      font-weight: $font-semibold;
+    }
+  }
+
+  &__details {
+    display: flex;
+    transform: translateY(20px);
+    justify-content: flex-start;
+    gap: 4px;
+    height: 44px;
+
+    &__title {
+      font-size: 1rem;
+    }
+
+    &__border {
+      border-right: 1px solid $text-light-color-300;
+      border-color: rgba(0, 0, 0, 0.1);
+      margin-right: 0.3rem;
+      margin-left: 0.3rem;
+      padding: 0 0.1rem;
+    }
+
+    &__border:last-child {
+      border-right: none;
+    }
+
+    select {
+      outline: none;
+      border: none;
+
+      /* Remove default arrow */
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+      /* Add padding on the right for our custom arrow */
+      padding: 8px 27.5px 8px 10px;
+
+      color: $text-light-color-300;
+      font-weight: $font-regular;
+      font-size: 12px;
+      font-family: $font-jakarta;
+      opacity: 0.8;
+
+      /* Add custom arrow as background image */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 12 12'%3E%3Cpath fill='none' stroke='black' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round' d='M3 5l3 3 3-3'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+
+      cursor: pointer;
+      transform: translateX(-8px);
+    }
+  }
+}
