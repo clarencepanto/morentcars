@@ -1,0 +1,141 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.footer {
+  padding: 1rem;
+  .fcontainer {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $text-light-color-300;
+    }
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $text-light-color-300;
+    }
+    @include wide {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $text-light-color-300;
+    }
+
+    .footer__intro {
+      width: 13.5rem;
+      height: 5.75rem;
+
+      img {
+        width: 6.75rem;
+        height: 1.75;
+      }
+
+      .footer__missionstatement {
+        padding-top: 1rem;
+        font-size: 0.75rem;
+        color: $text-light-color-300;
+        line-height: 1.6;
+      }
+    }
+
+    .footer__details {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @include tablet {
+        padding-right: 1rem;
+      }
+      @include desktop {
+        padding-right: 1rem;
+      }
+      @include wide {
+        padding-right: 1rem;
+      }
+
+      &__about,
+      &__socials,
+      &__community {
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 3rem;
+        h2 {
+          padding-bottom: 1.5rem;
+          font-size: 1.25rem;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+
+          a {
+            color: $text-light-color-300;
+          }
+        }
+
+        @include tablet {
+          gap: 3rem;
+        }
+        @include desktop {
+          padding-right: 3rem;
+        }
+        @include wide {
+          padding-right: 3rem;
+        }
+      }
+
+      &__socials {
+        @include tablet {
+          order: 3;
+        }
+        @include desktop {
+          order: 3;
+        }
+        @include wide {
+          order: 3;
+        }
+      }
+    }
+  }
+
+  &__pripoli {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    font-size: 0.75rem;
+
+    @include tablet {
+      justify-content: flex-end;
+      flex-direction: row;
+      gap: 30px;
+      transform: translateY(1.2rem);
+    }
+    @include desktop {
+      justify-content: flex-end;
+      flex-direction: row;
+      gap: 50px;
+      transform: translateY(1.2rem);
+    }
+    @include wide {
+      justify-content: flex-end;
+      flex-direction: row;
+      gap: 50px;
+      transform: translateY(1.2rem);
+    }
+  }
+
+  &__copyright {
+    font-size: 0.75rem;
+
+    @include tablet {
+      transform: translateY(-1.5rem);
+    }
+    @include desktop {
+      transform: translateY(-1.5rem);
+    }
+    @include wide {
+      transform: translateY(-1.5rem);
+    }
+  }
+}

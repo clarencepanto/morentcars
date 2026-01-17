@@ -7,12 +7,14 @@ import heartIcon from "../../assets/icons/vuesax/bold/heart.png";
 import notificationIcon from "../../assets/icons/vuesax/bold/notification.png";
 import settingsIcon from "../../assets/icons/vuesax/bold/settings.png";
 
-function Header() {
+function Header({ toggleMenu }) {
+  console.log(toggleMenu);
   return (
     <header className="header">
       <div className="header__toprow">
         <section className="header__sidebarusericons">
           <img
+            onClick={toggleMenu}
             src={hamburgerIcon}
             alt="sidebar"
             className="header__sidebarusericons__sidebarimg"

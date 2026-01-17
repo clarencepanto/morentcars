@@ -9,12 +9,26 @@
     }
   }
 
+  // controlls ldt border
   &__details {
     display: flex;
     transform: translateY(20px);
     justify-content: flex-start;
     gap: 4px;
     height: 44px;
+
+    @include tablet {
+      width: 100%;
+      gap: 20px;
+    }
+    @include desktop {
+      width: 100%;
+      gap: 20px;
+    }
+    @include wide {
+      width: 100%;
+      gap: 20px;
+    }
 
     &__title {
       font-size: 1rem;
@@ -26,6 +40,7 @@
       margin-right: 0.3rem;
       margin-left: 0.3rem;
       padding: 0 0.1rem;
+      flex: 1;
     }
 
     &__border:last-child {
@@ -57,6 +72,19 @@
 
       cursor: pointer;
       transform: translateX(-8px);
+
+      @include tablet {
+        transform: translateX(-10px);
+        padding: 8px 50px 8px 10px;
+      }
+      @include desktop {
+        transform: translateX(-10px);
+        padding: 8px 50px 8px 10px;
+      }
+      @include wide {
+        transform: translateX(-10px);
+        padding: 8px 50px 8px 10px;
+      }
     }
   }
 }
