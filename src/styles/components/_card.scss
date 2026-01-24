@@ -2,14 +2,17 @@
 @use "../abstracts/mixins" as *;
 
 .card {
-  width: 20.438rem;
+  width: 100%;
+  max-width: 650px;
   height: 15rem;
   padding: 1rem;
 
   @include tablet {
-    width: 19.813rem;
+    width: 100%;
+    max-width: 400px;
     height: 24.25rem;
     padding: 1.3rem;
+    margin: 0.8rem;
   }
   @include desktop {
     width: 19.813rem;

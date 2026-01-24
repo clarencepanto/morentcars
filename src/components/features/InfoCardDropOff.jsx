@@ -1,12 +1,10 @@
-import React from "react";
-
-function InfoCard() {
+function InfoCardDropOff() {
   return (
     <div className="infocard">
       <section className="smallcard">
         <input type="radio" />
         <label htmlFor="Pick-Up" className="smallcard__label">
-          Pick - Up
+          Drop - Off
         </label>
         <div className="infocard__details">
           <div className="infocard__details__border">
@@ -21,7 +19,7 @@ function InfoCard() {
             <h3 className="infocard__details__title">Date</h3>
             <select name="date" id="date">
               <option className="infocard__details__options" value="date">
-                20 July 2022
+                21 July 2022
               </option>
             </select>
           </div>
@@ -29,7 +27,7 @@ function InfoCard() {
             <h3 className="infocard__details__title">Time</h3>
             <select name="time" id="time">
               <option className="infocard__details__options" value="time">
-                07.00
+                01.00
               </option>
             </select>
           </div>
@@ -39,4 +37,4 @@ function InfoCard() {
   );
 }
 
-export default InfoCard;
+export default InfoCardDropOff;

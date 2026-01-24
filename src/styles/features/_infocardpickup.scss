@@ -3,6 +3,10 @@
 
 .infocard {
   .smallcard {
+    margin: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+
     &__label {
       padding-left: 0.5rem;
       font-weight: $font-semibold;
@@ -35,16 +39,10 @@
     }
 
     &__border {
-      border-right: 1px solid $text-light-color-300;
-      border-color: rgba(0, 0, 0, 0.1);
       margin-right: 0.3rem;
       margin-left: 0.3rem;
       padding: 0 0.1rem;
       flex: 1;
-    }
-
-    &__border:last-child {
-      border-right: none;
     }
 
     select {

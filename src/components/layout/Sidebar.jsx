@@ -1,3 +1,4 @@
+import ProductCard from "../features/ProductCard";
 import { useState, useEffect, useRef } from "react";
 import carsData from "../../data/cars.json";
 
@@ -95,7 +96,7 @@ function Sidebar({ isOpen }) {
     return result;
   };
 
-  // const filteredItems = getFilteredItems();
+  const filteredItems = getFilteredItems();
 
   // count all available types
 
@@ -110,71 +111,79 @@ function Sidebar({ isOpen }) {
   };
 
   return (
-    <section className={`sidebar ${isOpen ? "" : "sidebar-mobile"} `}>
-      <div className="sidebar__type">
-        <h4>TYPE</h4>
-        {types.map((type) => {
-          return (
-            <label key={type}>
-              <input
-                type="checkbox"
-                checked={filters.types.includes(type)}
-                onChange={() => handleFilterChange("types", type)}
-              />
-              <span>
-                {type} <span>({getTypeCount(type)})</span>
-              </span>
-            </label>
-          );
-        })}
-      </div>
-      <div className="sidebar__capacity">
-        <h4>CAPACITY</h4>
-        {capacity.map((capacity) => {
-          return (
-            <label key={capacity}>
-              <input
-                type="checkbox"
-                checked={filters.capacities.includes(capacity)}
-                onChange={() => handleFilterChange("capacities", capacity)}
-              />
-              <span>
-                {capacity} <span>({getCapacityCount(capacity)})</span>
-              </span>
-            </label>
-          );
-        })}
-      </div>
-      <div>
-        {/* will setup later for cars */}
-        {/* {filteredItems.map((item) => {
-          return (
-            <div key={item.id}>
-              <h2>
-                {item.name} ${item.price}
-              </h2>
-            </div>
-          );
-        })} */}
-      </div>
-      {/* PRICE SLIDER */}
-      <div className="sidebar__price">
-        <h4>PRICE</h4>
-
-        <input
-          ref={sliderRef}
-          type="range"
-          min={minPrice}
-          max={maxPrice}
-          value={filters.priceRange[1]}
-          onChange={handlePriceChange}
-          className="price-slider"
-        />
-        <div className="price-display">
-          Max: ${filters.priceRange[1].toFixed(2)}
+    <div>
+      <section className={`sidebar ${isOpen ? "" : "sidebar-mobile"} `}>
+        <div className="sidebar__type">
+          <h4>TYPE</h4>
+          {types.map((type) => {
+            return (
+              <label key={type}>
+                <input
+                  type="checkbox"
+                  checked={filters.types.includes(type)}
+                  onChange={() => handleFilterChange("types", type)}
+                />
+                <span>
+                  {type} <span>({getTypeCount(type)})</span>
+                </span>
+              </label>
+            );
+          })}
         </div>
+        <div className="sidebar__capacity">
+          <h4>CAPACITY</h4>
+          {capacity.map((capacity) => {
+            return (
+              <label key={capacity}>
+                <input
+                  type="checkbox"
+                  checked={filters.capacities.includes(capacity)}
+                  onChange={() => handleFilterChange("capacities", capacity)}
+                />
+                <span>
+                  {capacity} <span>({getCapacityCount(capacity)})</span>
+                </span>
+              </label>
+            );
+          })}
+        </div>
+
+        {/* PRICE SLIDER */}
+        <div className="sidebar__price">
+          <h4>PRICE</h4>
+
+          <input
+            ref={sliderRef}
+            type="range"
+            min={minPrice}
+            max={maxPrice}
+            value={filters.priceRange[1]}
+            onChange={handlePriceChange}
+            className="price-slider"
+          />
+          <div className="price-display">
+            Max: ${filters.priceRange[1].toFixed(2)}
+          </div>
+        </div>
+      </section>
+
+      <div className="sidebar__carcards">
+        {filteredItems.map((item) => {
+          return (
+            <ProductCard
+              key={item.id}
+              carname={item.name}
+              cartype={item.type}
+              carurl={item.url}
+              carfuel={item.fuelcapacity}
+              cartransmission={item.transmissiontype}
+              carcapacity={item.capacity}
+              carprice={item.price}
+            />
+          );
+        })}
       </div>
-    </section>
+    </div>
   );
 }
 

@@ -54,6 +54,19 @@
     }
   }
 
+  &__carcards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
   &__price {
     padding: 1rem;
 

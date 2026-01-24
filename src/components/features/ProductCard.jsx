@@ -1,16 +1,23 @@
-import Image from "../../assets/images/allnewrush.jpg";
 import gasIcon from "../../assets/icons/gas-station.png";
 import groupIcon from "../../assets/icons/profile-2user.png";
 import carIcon from "../../assets/icons/Car.png";
 import heart from "../../assets/icons/heart.png";
 
-function ProductCard() {
+function ProductCard({
+  carname,
+  cartype,
+  carurl,
+  carfuel,
+  cartransmission,
+  carcapacity,
+  carprice,
+}) {
   return (
     <section className="card productcard">
       <div className="productcard__header">
         <span>
-          <h2 className="productcard__header__title">All New Rush</h2>
-          <h4 className="productcard__header__subtitle">SUV</h4>
+          <h2 className="productcard__header__title">{carname}</h2>
+          <h4 className="productcard__header__subtitle">{cartype}</h4>
         </span>
         <span className="productcard__heart">
           <img src={heart} alt="heart" />
@@ -19,7 +26,7 @@ function ProductCard() {
       <div className="productcard__info">
         <div>
           <div className="productcard__info__opacityeffect"></div>
-          <img src={Image} alt="image" className="carimg" />
+          <img src={carurl} alt="image" className="carimg" />
         </div>
 
         <div className="productcard__info__carstats">
@@ -29,7 +36,9 @@ function ProductCard() {
               alt="fuel"
               className="productcard__info__carstats__fuel__icon"
             />
-            <h5 className="productcard__info__carstats__fuel__text">70L</h5>
+            <h5 className="productcard__info__carstats__fuel__text">
+              {carfuel}
+            </h5>
           </div>
           <div className="productcard__info__carstats__transmission">
             <img
@@ -38,7 +47,7 @@ function ProductCard() {
               className="productcard__info__carstats__transmission__icon"
             />
             <h5 className="productcard__info__carstats__transmission__text">
-              Manual
+              {cartransmission}
             </h5>
           </div>
           <div className="productcard__info__carstats__capacity">
@@ -48,14 +57,15 @@ function ProductCard() {
               className="productcard__info__carstats__capacity__icon"
             />
             <h5 className="productcard__info__carstats__capacity__text">
-              6 People
+              {carcapacity}
             </h5>
           </div>
         </div>
       </div>
       <div className="productcard__price">
         <h2 className="productcard__price__text">
-          $72.00/ <span className="productcard__price__text--light">day</span>
+          ${carprice}.00/
+          <span className="productcard__price__text--light">day</span>
         </h2>
         <h2 className="productcard__price__original">$80.00</h2>
       </div>

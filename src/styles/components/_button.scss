@@ -13,6 +13,7 @@
   font-family: $font-jakarta;
   border-radius: 4px;
   cursor: pointer;
+  position: relative;
 
   @include tablet {
     width: 7.25rem;
@@ -60,7 +61,24 @@
     }
   }
 
+  &--swap {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: $primary-color-500;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding: 1.2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
   &:active {
     background-color: $primary-dark-color-700;
   }
+}
+
+.swapbtnsize {
+  width: 1rem;
+  height: 1rem;
 }

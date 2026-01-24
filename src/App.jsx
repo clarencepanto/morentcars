@@ -1,7 +1,10 @@
 import Header from "./components/layout/Header";
+import InfoCardPickUp from "./components/features/InfoCardPickUp";
+import InfoCardDropOff from "./components/features/InfoCardDropOff";
 import Sidebar from "./components/layout/Sidebar";
 import Footer from "./components/layout/Footer";
 import "./styles/main.scss";
+import swapImage from "./assets/icons/Swap.png";
 import { useState } from "react";
 
 export default function App() {
@@ -16,6 +19,11 @@ export default function App() {
   return (
     <div>
       <Header toggleMenu={toggleMenu} />
+      <InfoCardPickUp />
+      <div className="btn--swap">
+        <img src={swapImage} alt="swapbutton" className="swapbtnsize" />
+      </div>
+      <InfoCardDropOff />
       <Sidebar isOpen={isOpen} />
       <Footer />
     </div>
