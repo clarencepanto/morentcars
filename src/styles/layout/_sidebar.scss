@@ -9,7 +9,15 @@
   // min, preferred vw, max
   width: clamp(6.25rem, 35vw, 22.5rem);
   height: clamp(5rem, 70vh, 100rem);
-  transform: translateY(-5rem);
+  transform: translateY(-1rem);
+
+  @include tablet {
+    transform: translateY(-3rem);
+  }
+
+  @include desktop {
+    transform: translateY(-6rem);
+  }
 
   &__type,
   &__capacity {

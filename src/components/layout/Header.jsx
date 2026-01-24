@@ -8,7 +8,6 @@ import notificationIcon from "../../assets/icons/vuesax/bold/notification.png";
 import settingsIcon from "../../assets/icons/vuesax/bold/settings.png";
 
 function Header({ toggleMenu }) {
-  console.log(toggleMenu);
   return (
     <header className="header">
       <div className="header__toprow">

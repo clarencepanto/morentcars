@@ -110,7 +110,7 @@ function Sidebar({ isOpen }) {
   };
 
   return (
-    <section className={`sidebar ${isOpen} ? '' : -mobile`}>
+    <section className={`sidebar ${isOpen ? "" : "sidebar-mobile"} `}>
       <div className="sidebar__type">
         <h4>TYPE</h4>
         {types.map((type) => {
