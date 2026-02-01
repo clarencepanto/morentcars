@@ -2,9 +2,15 @@
 @use "../abstracts/mixins" as *;
 
 .header {
-  padding: 2rem;
+  padding: 2rem 2rem 0.3rem 2rem;
   min-width: 23.438rem;
   min-height: 13.875rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: white;
 
   @include tablet {
     padding: 3rem;

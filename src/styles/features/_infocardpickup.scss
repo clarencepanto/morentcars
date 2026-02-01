@@ -91,7 +91,8 @@
 }
 
 .infocards {
-  padding-top: 1rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
   @include desktop {
     display: flex;
     justify-content: center;

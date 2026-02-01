@@ -7,9 +7,17 @@
 
 .sidebar {
   // min, preferred vw, max
-  width: clamp(6.25rem, 35vw, 22.5rem);
-  height: clamp(5rem, 70vh, 100rem);
-  transform: translateY(-1rem);
+  // width: clamp(6.25rem, 35vw, 22.5rem);
+  // height: clamp(5rem, 70vh, 100rem);
+  // transform: translateY(-1rem);
+
+  position: fixed;
+  top: 12.3rem;
+  right: 0;
+  height: 100%;
+  background-color: white;
+  z-index: 5;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
 
   @include tablet {
     transform: translateY(-3rem);

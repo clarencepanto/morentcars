@@ -13,7 +13,6 @@ function Header({ toggleMenu }) {
       <div className="header__toprow">
         <section className="header__sidebarusericons">
           <img
-            onClick={toggleMenu}
             src={hamburgerIcon}
             alt="sidebar"
             className="header__sidebarusericons__sidebarimg"
@@ -58,6 +57,7 @@ function Header({ toggleMenu }) {
               src={filterIcon}
               alt=""
               className="header__searchiconfilter__filtericon"
+              onClick={toggleMenu}
             />
           </div>
         </section>
