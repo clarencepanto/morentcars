@@ -18,8 +18,8 @@
   }
 
   @include desktop {
-    padding-bottom: 0;
     padding-top: 0.2rem;
+    min-height: 6rem;
   }
 
   &__toprow {

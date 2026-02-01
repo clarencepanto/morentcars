@@ -26,7 +26,23 @@
   }
 
   @include desktop {
-    transform: translateY(-6rem);
+    // position: sticky;
+    // top: 64px; /* below navbar */
+    // left: 0;
+    // width: 10rem;
+
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 10rem;
+    height: 85%;
+    background-color: white;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+  }
+
+  @include wide {
+    height: 78%;
   }
 
   &__type,
@@ -75,6 +91,11 @@
     }
     @include desktop {
       grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+    }
+
+    @include wide {
+      grid-template-columns: repeat((4, 1fr));
     }
   }
 
