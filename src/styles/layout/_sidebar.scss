@@ -21,6 +21,8 @@
 
   @include tablet {
     transform: translateY(-3rem);
+    top: 16rem;
+    width: 14rem;
   }
 
   @include desktop {
@@ -69,6 +71,7 @@
 
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
     }
     @include desktop {
       grid-template-columns: repeat(3, 1fr);
