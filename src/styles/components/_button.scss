@@ -67,10 +67,18 @@
     background-color: $primary-color-500;
     border-radius: 10px;
     margin: auto;
-    margin-top: -10px;
-    margin-bottom: -10px;
+    position: relative;
+    margin-top: -30px;
+    top: 20px;
     padding: 1.2rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+
+    @include desktop {
+      transform: translateY(50px);
+      margin-left: -7px;
+      margin-right: -7px;
+    }
   }
 
   &:active {

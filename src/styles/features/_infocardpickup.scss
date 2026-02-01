@@ -6,6 +6,9 @@
     margin: auto;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border: none;
+    width: 100%;
+    max-width: 650px;
+    z-index: 1;
 
     &__label {
       padding-left: 0.5rem;
@@ -84,5 +87,13 @@
         padding: 8px 50px 8px 10px;
       }
     }
+  }
+}
+
+.infocards {
+  padding-top: 1rem;
+  @include desktop {
+    display: flex;
+    justify-content: center;
   }
 }

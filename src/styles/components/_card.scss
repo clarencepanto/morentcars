@@ -6,6 +6,7 @@
   max-width: 650px;
   height: 15rem;
   padding: 1rem;
+  background-color: white;
 
   @include tablet {
     width: 100%;
@@ -32,6 +33,7 @@
   border: 1px solid black;
   padding: 0.7rem;
   border-radius: 15px;
+  background-color: white;
 
   @include tablet {
     width: 30.375rem;

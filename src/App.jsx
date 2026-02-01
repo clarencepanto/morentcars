@@ -19,13 +19,17 @@ export default function App() {
   return (
     <div>
       <Header toggleMenu={toggleMenu} />
-      <InfoCardPickUp />
-      <div className="btn--swap">
-        <img src={swapImage} alt="swapbutton" className="swapbtnsize" />
-      </div>
-      <InfoCardDropOff />
-      <Sidebar isOpen={isOpen} />
-      <Footer />
+      <section className="maininfo">
+        <div className="infocards">
+          <InfoCardPickUp />
+          <div className="btn--swap">
+            <img src={swapImage} alt="swapbutton" className="swapbtnsize" />
+          </div>
+          <InfoCardDropOff />
+        </div>
+        <Sidebar isOpen={isOpen} />
+        <Footer />
+      </section>
     </div>
   );
 }
